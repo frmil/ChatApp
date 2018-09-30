@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ServerApp.View.ChatItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServerApp.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="300">
+		<Border Padding="5" Background="LightSkyBlue">
+				<Grid Margin="{Binding Margin}">
+						<Border CornerRadius="10" Background="{Binding Background}" Padding="5">
+								<TextBlock VerticalAlignment="Center" TextWrapping="Wrap"
+												 Foreground="DarkBlue"
+												 Background="{Binding Background}"
+												 Text="{Binding Message}"/>
+						</Border>    
+				</Grid>
+		</Border>
+</UserControl>
